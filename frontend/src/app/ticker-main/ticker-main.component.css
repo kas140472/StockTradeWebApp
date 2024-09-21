@@ -1,0 +1,109 @@
+.tablink {
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+
+  .tablink {
+    background-color: #f0f0f0; 
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tablink.active {
+    background-color: #ccc; /* Background color for active tab */
+    color: #fff; /* Text color for active tab */
+  }
+  
+  
+  .tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+}
+
+#header-text {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+div button {
+    outline: none;
+    box-shadow: none;
+}
+
+path {
+    fill: rgb(255, 195, 0);
+}
+
+  #buy-button {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  path.neg {
+    color: red;
+  }
+  
+  path.star-fill-icon {
+    color: rgb(255, 195, 0);
+  }
+  
+  path.pos {
+    color: green;
+  }
+
+  .yellow{
+    color: rgb(255, 195, 0);
+  }
+  
+  .card-title {
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  ::ng-deep .pos {
+    fill: green !important; /* Apply your desired color */
+  }
+  
+  ::ng-deep .neg {
+    fill: red !important; /* Apply your desired color */
+  }
+
+/* #charts-content{
+  min-height: 1000px;
+} */
+
+/* #recs-chart-container{
+  min-width: 1000px;
+} */
+
+.text-center {
+  text-align: center;
+}
+
+.news-card {
+  height: auto; 
+  max-height: 100px; 
+}
+
+.news-image {
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover; 
+}

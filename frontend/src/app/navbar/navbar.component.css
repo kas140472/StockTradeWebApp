@@ -1,0 +1,13 @@
+nav {
+    background: #2824ac;
+}
+
+.active {
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.nav-item {
+    text-align: right;
+} 

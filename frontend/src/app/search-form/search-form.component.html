@@ -1,0 +1,29 @@
+<div class="col-sm text-center" id="header-text">
+  <h1>STOCK SEARCH</h1>
+</div>
+
+<div class="container"> 
+  <form  class="mx-auto" [formGroup]="formGroup">
+      <div class="input-group align-baseline rounded rounded-pill pl-3" id="border-g">
+        <input formControlName="employee" matInput type="text" placeholder="Enter stock ticker symbol" aria-describedby="button-addon1" class="form-control border-0 m-0 p-0" [matAutocomplete]="auto" />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngIf="isLoading" class="is-loading"><mat-spinner diameter="28"></mat-spinner></mat-option>
+          <ng-container *ngIf="!isLoading">
+            <mat-option (click)="navigateToSearch(item.displaySymbol)" *ngFor="let item of filteredOptions" [value]="item.displaySymbol">
+              <span>{{ item.displaySymbol }}</span>
+              <small> | {{item.description}}</small>
+            </mat-option>
+          </ng-container>
+        </mat-autocomplete>
+
+            <button mat-icon-button (click)="navigateToSearch(formGroup.get('employee')?.value)" style="size: 20px;"> 
+              <i class="material-icons" style="color: #302cac">search</i>
+            </button>
+            
+            <button mat-icon-button (click)="navigateToHome()" style="size: 20px;"> 
+                <i class="material-icons" style="color: #302cac">clear</i>
+            </button>
+         
+      </div>
+    </form>
+</div>

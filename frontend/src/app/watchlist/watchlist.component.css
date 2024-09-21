@@ -1,0 +1,47 @@
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+
+h1.heading {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+  }
+  
+  h1.classT {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  h1.latest {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  h3.nn {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  div.cdp {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .red-text {
+    color: red; /* Define the color for text-danger */
+  }
+  
+  .green-text {
+    color: green; /* Define the color for text-success */
+  }
+  
